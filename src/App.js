@@ -14,7 +14,13 @@ function App() {
     })
 
   }
-  console.log(items);
+const deleteItem=(id)=>{
+  setitems((prevItems)=>{
+    return prevItems.filter((item,index)=>{
+      return index!==id;
+    })
+  })
+}
  return(
     <div className="container">
       <div className='heading'>
@@ -28,7 +34,7 @@ function App() {
       <ui>
         {items.map((item,index)=>{
           return(
-            <TodoItems key={index} text={item}/>
+            <TodoItems key={index} text={item} deleteItem={deleteItem} id={index}/>
           )
         })}
       </ui>

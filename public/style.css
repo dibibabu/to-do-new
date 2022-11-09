@@ -9,5 +9,64 @@ background-image: radial-gradient(#bfc0c1 7.2%,transparent 0);
 background-size: 25px 25px;
 box-shadow: 4px 3px 7px 2px #00000040;
 padding: 1rem;
+cursor: pointer;
 
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.heading>h1{
+    transform:rotate(2deg);
+    padding: 0.2rem 1.2 rem;
+    border-radius: 20% 5% 20% 5%/5% 20% 5% 20%;
+    background-color: #fdcb6e;
+    font-size: 1.5rem;
+}
+
+.form>input{
+    box-sizing:border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-bottom-right-radius: 15px 3px;
+    border-bottom-left-radius: 3px 15px;
+    border: 3px solid transparent;
+    font-family: "Architects Daughter",cursive;
+    font-size: 1rem;
+    color: hsla(260, 2%, 25%, 0.7);
+    border-color: #fdcb6e;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button{
+
+padding: 0;
+border: none;
+font-family: "Architects Daughter",cursive;
+text-decoration: none;
+padding-bottom: 3px;
+border-radius: 5px;
+background-color: #ffeaa7;
+cursor: pointer;
+}
+button>span{
+
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid hsl(198,1%,29%);
+}
+li{
+    text-align: left;
+    position: relative;
+    padding: o.5rem;
 }
